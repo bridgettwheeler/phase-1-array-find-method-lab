@@ -4,11 +4,7 @@ const record = [
     {year: "2016", result: "N/A"}
   ] 
 
-function superbowlWin(element, index, array) {
-    // how do I acccess the object of an element?
-    if  (object.keys(record) === "W") {
-        return (object.key)
-    } else {
-        return "undefined"
-    }
+function superbowlWin(array) {
+    let result = array.find(element => element.result === "W")
+    return !!result ? result.year: undefined
 }
